@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Markets Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .dashboard {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+      }
+      .section {
+        border: 1px solid #ccc;
+        padding: 5px;
+      }
+      h2 {
+        font-size: 12px;
+        margin: 0 0 5px 0;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        margin-bottom: 2px;
+      }
+      @media (max-width: 600px) {
+        body {
+          font-size: 8px;
+        }
+        h2 {
+          font-size: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="section">
+        <h2>S&P 500</h2>
+        <ul>
+          <li>AAPL - Apple Inc.</li>
+          <li>MSFT - Microsoft Corporation</li>
+          <li>AMZN - Amazon.com Inc.</li>
+          <li>BAC - Bank of America Corporation</li>
+          <li>JPM - JPMorgan Chase & Co.</li>
+          <li>GS - Goldman Sachs Group, Inc.</li>
+          <li>WFC - Wells Fargo & Company</li>
+          <li>JNJ - Johnson & Johnson</li>
+          <li>V - Visa, Inc.</li>
+          <li>UNH - UnitedHealth Group Incorporated</li>
+          <li>HD - Home Depot, Inc.</li>
+          <li>PG - Procter & Gamble Company</li>
+          <li>TRV - Tractor Supply Company</li>
+          <li>WMT - Walmart Inc.</li>
+          <li>CRM - Salesforce.com, Inc.</li>
+          <li>NFLX - Netflix, Inc.</li>
+          <li>RHT - Ross Stores, Inc.</li>
+          <li>COST - Costco Wholesale Corporation</li>
+          <li>DIS - The Walt Disney Company</li>
+          <li>AXP - American Express Company</li>
+          <li>BMY - Bristol-Myers Squibb Company</li>
+          <li>PPG - PPG Industries, Inc.</li>
+          <li>TGT - Target Corporation</li>
+          <li>TXN - Texas Instruments Incorporated</li>
+          <li>TMUS - T-Mobile US, Inc.</li>
+          <li>UAA - United Airlines Holdings Inc.</li>
+          <li>UPS - United Parcel Service, Inc.</li>
+          <li>WBA - Wells Fargo Bank, N.A. (Wells Fargo)</li>
+          <li>MAR - Marriott International, Inc.</li>
+          <li>WMT - Walmart Inc.</li>
+          <li>EA - Electronic Arts, Inc.</li>
+          <li>STX - Stericycle, Inc.</li>
+          <li>BHI - Boeing Co.</li>
+          <li>TGT - Target Corporation</li>
+          <li>TILE - Tile, Inc.</li>
+          <li>TSLA - Tesla, Inc.</li>
+          <li>NFLX - Netflix, Inc.</li>
+          <li>PYPL - PayPal Holdings, Inc.</li>
+          <li>RCL - Royal Caribbean Group</li>
+          <li>REG - REGIONALLY-ADJUSTED INSURANCE COMPANIES</li>
+          <li>PLD - PLDT Group, Inc.</li>
+          <li>C - CVS Health Corporation</li>
+          <li>HAL - Halliburton Company</li>
+          <li>SBUX - Starbucks Corporation</li>
+          <li>SNAP - Square, Inc.</li>
+          <li>TXN - Texas Instruments Incorporated</li>
+          <li>WBA - Wells Fargo Bank, N.A. (Wells Fargo)</li>
+          <li>AMZN - Amazon.com, Inc.</li>
+          <li>C - C Corporation</li>
+          <li>CRM - Salesforce.com, Inc.</li>
+          <li>EA - Electronic Arts, Inc.</li>
+          <li>K - KitchenAid</li>
+          <li>EBAY - eBay Inc.</li>
+          <li>F - Family Dollar Stores, Inc.</li>
+          <li>HON - Honda Motor Company, Ltd.</li>
+          <li>HNI - HNI Corporation</li>
+          <li>LHX - Leidos Holdings, Inc.</li>
+          <li>LINCOLN - Lincoln National Corporation</li>
+          <li>LMT - Land O'Lakes, Inc.</li>
+          <li>LLY - Labcorp Drug Development, Inc.</li>
+          <li>MDLZ - Macy's, Inc.</li>
+          <li>MNK - Men's Wearhouse, Inc.</li>
+          <li>MCD - McDonald's Corp.</li>
+          <li>MKC - McDonald's Corp.</li>
+          <li>MSFT - Microsoft Corporation</li>
+          <li>NKE - Nike, Inc.</li>
+          <li>PFE - Pfizer Inc.</li>
+          <!-- Add more S&P 500 companies here -->
+        </ul>
+      </div>
+      <div class="section">
+        <h2>NASDAQ 100</h2>
+        <ul>
+          <li>GOOGL - Alphabet Inc.</li>
+          <li>FB - Meta Platforms Inc.</li>
+          <li>NVDA - NVIDIA Corporation</li>
+          <li>AMZN - Amazon.com Inc.</li>
+          <li>TSLA - Tesla Inc.</li>
+          <li>MSFT - Microsoft Corporation</li>
+          <li>AAPL - Apple Inc.</li>
+          <li>ADBE - Adobe Inc.</li>
+          <li>CSCO - Cisco Systems Inc.</li>
+          <li>INTEL - Intel Corporation</li>
+          <li>QCOM - QUALCOMM Incorporated</li>
+          <li>CMCSA - Comcast Corporation</li>
+          <li>PEP - PepsiCo Inc.</li>
+          <li>MDLZ - Mondelez International Inc.</li>
+          <li>ILMN - Illumina Inc.</li>
+          <li>BIDU - Baidu Inc.</li>
+          <li>NTES - NetEase Inc.</li>
+          <li>JD - JD.com Inc.</li>
+          <li>WB - Weibo Corporation</li>
+          <li>CHKP - Check Point Software Technologies Ltd.</li>
+          <li>VRSN - Verisign Inc.</li>
+          <li>CTAS - Cintas Corporation</li>
+          <li>EA - Electronic Arts Inc.</li>
+          <li>ATVI - Activision Blizzard Inc.</li>
+          <li>TTWO - Take-Two Interactive Software Inc.</li>
+          <li>DXCM - DexCom Inc.</li>
+          <li>VRTX - Vertex Pharmaceuticals Incorporated</li>
+          <li>REGN - Regeneron Pharmaceuticals Inc.</li>
+          <li>BIIB - Biogen Inc.</li>
+          <li>ALXN - Alexion Pharmaceuticals Inc.</li>
+          <li>SGEN - Seagen Inc.</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>Dow 30</h2>
+        <ul>
+          <li>BA - Boeing Company</li>
+          <li>CAT - Caterpillar Inc.</li>
+          <li>GS - Goldman Sachs Group Inc.</li>
+          <!-- Add more Dow 30 companies here -->
+          <li>AAPL - Apple Inc.</li>
+          <li>AMGN - Amgen Inc.</li>
+          <li>BA - Boeing Company</li>
+          <li>CAT - Caterpillar Inc.</li>
+          <li>CSCO - Cisco Systems Inc.</li>
+          <li>CVX - Chevron Corporation</li>
+          <li>DIS - The Walt Disney Company</li>
+          <li>DOW - Dow Inc.</li>
+          <li>GS - Goldman Sachs Group Inc.</li>
+          <li>HD - The Home Depot Inc.</li>
+          <li>HON - Honeywell International Inc.</li>
+          <li>IBM - International Business Machines Corporation</li>
+          <li>INTC - Intel Corporation</li>
+          <li>JNJ - Johnson & Johnson</li>
+          <li>JPM - JPMorgan Chase & Co.</li>
+          <li>KO - The Coca-Cola Company</li>
+          <li>MA - Mastercard Incorporated</li>
+          <li>MCD - McDonald's Corporation</li>
+          <li>MDT - Medtronic plc</li>
+          <li>MRK - Merck & Co., Inc.</li>
+          <li>MS - Morgan Stanley</li>
+          <li>MSFT - Microsoft Corporation</li>
+          <li>NKE - Nike Inc.</li>
+          <li>PFE - Pfizer Inc.</li>
+          <li>PG - Procter & Gamble Co.</li>
+          <li>TRV - The Travelers Companies, Inc.</li>
+          <li>UNH - UnitedHealth Group Incorporated</li>
+          <li>V - Visa Inc.</li>
+          <li>WMT - Walmart Inc.</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>US Futures</h2>
+        <ul>
+          <li>ES - E-mini S&P 500</li>
+          <li>NQ - E-mini NASDAQ 100</li>
+          <li>YM - E-mini Dow</li>
+          <li>CL - Crude Oil</li>
+          <li>GC - Gold</li>
+          <li>ES - E-mini S&P 500</li>
+          <li>NQ - E-mini NASDAQ 100</li>
+          <li>YM - E-mini Dow Jones Industrial Average</li>
+          <li>CL - Crude Oil</li>
+          <li>GC - Gold</li>
+          <li>HG - Silver</li>
+          <li>HE - E-mini Copper</li>
+          <li>HO - E-mini Heating Oil</li>
+          <li>LC - E-mini Live Cattle</li>
+          <li>LB - E-mini Lean Hog</li>
+          <li>LC - E-mini Corn</li>
+          <li>LC - E-mini Soybeans</li>
+          <li>NQ - E-mini Natural Gas</li>
+          <li>OC - E-mini Oats</li>
+          <li>OB - E-mini Butter</li>
+          <li>OS - E-mini Sorghum</li>
+          <li>OH - E-mini Oats</li>
+          <li>SL - E-mini Sugar</li>
+          <li>TA - E-mini Tap Oil</li>
+          <li>TT - E-mini TBTU</li>
+          <li>U1 - U.S. 1</li>
+          <li>U2 - U.S. 2</li>
+          <li>U3 - U.S. 3</li>
+          <li>VB - E-mini Vitol Gasoline Summit</li>
+          <li>VD - E-mini Vitol Gas Oil Summit</li>
+          <li>VU - E-mini Vitol Gas Oil Units</li>
+          <li>VT - E-mini Vitol Gas Oil Transmogrifier</li>
+          <li>VT - E-mini Vitol Gas Oil Transmogrifier</li>
+          <li>VC - E-mini Vitol Copper</li>
+          <li>W1 - E-mini West Texas Crude</li>
+          <li>WT - E-mini WTI Crude Oil</li>
+          <li>XB - E-mini Brent Crude</li>
+          <li>XR - E-mini ICE Brent</li>
+          <li>YF - E-mini NYMEX Futures</li>
+          <li>YC - E-mini NYMEX Cotton</li>
+          <li>YG - E-mini NYMEX Gold</li>
+          <li>YL - E-mini NYMEX Lean Hog</li>
+          <li>YM - E-mini NYMEX Live Cattle</li>
+          <li>YO - E-mini NYMEX Sugar</li>
+          <li>YT - E-mini NYMEX Tap Oil</li>
+          <li>YS - E-mini NYMEX Soybean Oil</li>
+          <li>YT - E-mini NYMEX TBTU</li>
+          <li>YU - E-mini NYMEX Vitol Gasoline Summit</li>
+          <li>YV - E-mini NYMEX Vitol Gas Oil Summit</li>
+          <li>YV - E-mini NYMEX Vitol Gas Oil Units</li>
+          <li>YV - E-mini NYMEX Vitol Gas Oil Transmogrifier</li>
+          <li>YV - E-mini NYMEX Vitol Copper</li>
+          <li>ZC - E-mini NYMEX Copper</li>
+          <li>ZG - E-mini NYMEX Gold</li>
+          <li>ZL - E-mini NYMEX Lean Hogs</li>
+          <li>ZM - E-mini NYMEX Live Cattle</li>
+          <li>ZO - E-mini NYMEX Sugar</li>
+          <li>ZT - E-mini NYMEX Tap Oil</li>
+          <!-- Add more futures here -->
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Top 30 Cryptocurrencies</h2>
+        <ul>
+          <li>BTC - Bitcoin</li>
+          <li>ETH - Ethereum</li>
+          <li>BNB - Binance Coin</li>
+          <!-- Add more cryptocurrencies here -->
+          Here are a few more items to continue your list of cryptocurrencies:
+
+          <li>XRP - Ripple</li>
+          <li>ADA - Cardano</li>
+          <li>SOL - Solana</li>
+          <li>DOT - Polkadot</li>
+          <li>DOGE - Dogecoin</li>
+          <li>LTC - Litecoin</li>
+          <li>LINK - Chainlink</li>
+          <li>MATIC - Polygon</li>
+          <li>BUSD - Binance USD</li>
+          <li>USDC - USD Coin</li>
+          <li>USDT - Tether</li>
+          <li>DAI - Dai</li>
+          <li>UNI - Uniswap</li>
+          <li>ALGO - Algorand</li>
+          <li>XTZ - Tezos</li>
+          <li>CAKE - PancakeSwap</li>
+          <li>SUSHI - SushiSwap</li>
+          <li>AAVE - Aave</li>
+          <li>SNX - Synthetix</li>
+          <li>YFI - yearn.finance</li>
+          <li>MKR - Maker</li>
+          <li>COMP - Compound</li>
+          <li>CRV - Curve</li>
+          <li>BAL - Balancer</li>
+          <li>KNC - Kyber Network</li>
+          <li>REN - Ren</li>
+          <li>UMA - UMA</li>
+          <li>BAND - Band Protocol</li>
+          <li>OMG - OMG Network</li>
+          <li>ZRX - 0x</li>
+          <li>RLC - iExec</li>
+          <li>GRT - The Graph</li>
+          <li>BAT - Basic Attention Token</li>
+          <li>LRC - Loopring</li>
+          <li>RSR - Reserve Rights</li>
+          <li>NEXO - Nexo</li>
+          <li>CELR - Celer Network</li>
+          <li>FET - Fetch.ai</li>
+          <li>CTSI - Cartesi</li>
+          <li>STORJ - Storj</li>
+          <li>IOTX - IoTeX</li>
+          <li>NU - NuCypher</li>
+          <li>SKL - Skale</li>
+          <li>CHZ - Chiliz</li>
+          <li>ENJ - Enjin Coin</li>
+          <li>MANA - Decentraland</li>
+          <li>SAND - The Sandbox</li>
+          <li>AXS - Axie Infinity</li>
+          <li>GALA - Gala Games</li>
+          <li>AUDIO - Audius</li>
+          <li>BLZ - Bluzelle</li>
+          <li>BAND - Band Protocol</li>
+          <li>LINK - Chainlink</li>
+          <li>DOT - Polkadot</li>
+          <li>AAVE - Aave</li>
+          <li>YFI - yearn.finance</li>
+          <li>CAKE - PancakeSwap</li>
+          <li>UNI - Uniswap</li>
+          <li>SUSHI - SushiSwap</li>
+          <li>SNX - Synthetix</li>
+          <li>REN - Ren</li>
+          <li>CRV - Curve</li>
+          <li>BAL - Balancer</li>
+          <li>KNC - Kyber Network</li>
+          <li>OMG - OMG Network</li>
+          <li>ZRX - 0x</li>
+          <li>RLC - iExec</li>
+          <li>GRT - The Graph</li>
+          <li>BAT - Basic Attention Token</li>
+          <li>LRC - Loopring</li>
+          <li>RSR - Reserve Rights</li>
+          <li>NEXO - Nexo</li>
+          <li>CELR - Celer Network</li>
+          <li>FET - Fetch.ai</li>
+          <li>CTSI - Cartesi</li>
+          <li>STORJ - Storj</li>
+          <li>IOTX - IoTeX</li>
+          <li>NU - NuCypher</li>
+          <li>SKL - Skale</li>
+          <li>CHZ - Chiliz</li>
+          <li>ENJ - Enjin Coin</li>
+          <li>MANA - Decentraland</li>
+          <li>SAND - The Sandbox</li>
+          <li>AXS - Axie Infinity</li>
+          <li>GALA - Gala Games</li>
+          <li>AUDIO - Audius</li>
+          <li>BLZ - Bluzelle</li>
+          <li>HNT - Helium</li>
+          <li>STX - Blockstack</li>
+          <li>MIR - Mirror Protocol</li>
+          <li>PERP - Perpetual Protocol</li>
+          <li>ORN - Orion Protocol</li>
+          <li>ROSE - Oasis Network</li>
+          <li>LUNA - TerraUSD</li>
+          <li>ANC - Anchor Protocol</li>
+          <li>UST - TerraUSD</li>
+          <li>LUNC - Terra Classic</li>
+          <li>KDA - Kadena</li>
+          <li>HBAR - Hedera Hashgraph</li>
+          <li>FTM - Fantom</li>
+          <li>NEAR - Near Protocol</li>
+          <li>CELO - Celo</li>
+          <li>AXS - Axie Infinity Shards</li>
+          <li>GHST - Aavegotchi</li>
+          <li>SFP - Safepal</li>
+          <li>FARM - Harvest Finance</li>
+          <li>BONDLY - Bondly</li>
+          <li>HGET - Hegic</li>
+          <li>YFII - DFI.money</li>
+          <li>KP3R - Keep3r</li>
+          <li>LIT - Litentry</li>
+          <li>BMI - BMI</li>
+          <li>SLP - Smooth Love Potion</li>
+          <li>OHM - Olympus</li>
+          <li>GNO - Gnosis</li>
+          <li>CVX - Convex Finance</li>
+          <li>LDO - Lido</li>
+          <li>ROOK - KeeperDAO</li>
+          <li>PICKLE - Pickle Finance</li>
+          <li>YGG - Yield Guild Games</li>
+          <li>MBOX - Mobox</li>
+          <li>GALA - Gala Games</li>
+          <li>AUDIO - Audius</li>
+          <li>BLZ - Bluzelle</li>
+          <li>HNT - Helium</li>
+          <li>STX - Blockstack</li>
+          <li>MIR - Mirror Protocol</li>
+          <li>PERP - Perpetual Protocol</li>
+          <li>ORN - Orion Protocol</li>
+          <li>ROSE - Oasis Network</li>
+          <li>LUNA - TerraUSD</li>
+          <li>ANC - Anchor Protocol</li>
+          <li>UST - TerraUSD</li>
+          <li>LUNC - Terra Classic</li>
+          <li>KDA - Kadena</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>Major Sector Indices</h2>
+        <ul>
+          <li>XLF - Financial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLF - Financial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLU - Utilities Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLP - Consumer Staples Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLP - Consumer Staples Select Sector SPDR Fund</li>
+          <li>XLU - Utilities Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select S</li>
+          <!-- Add more sector indices here -->
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Subsector Indices</h2>
+        <ul>
+          <li>XHB - SPDR S&P Homebuilders ETF</li>
+          <li>XRT - SPDR S&P Retail ETF</li>
+          <li>XBI - SPDR S&P Biotech ETF</li>
+          <!-- Add more subsector indices here -->
+          <li>XHB - SPDR S&P Homebuilders ETF</li>
+          <li>XRT - SPDR S&P Retail ETF</li>
+          <li>XBI - SPDR S&P Biotech ETF</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLU - Utilities Select Sector SPDR Fund</li>
+          <li>XLF - Financial Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select Sector SPDR Fund</li>
+          <li>XLI - Industrial Select Sector SPDR Fund</li>
+          <li>XLK - Technology Select Sector SPDR Fund</li>
+          <li>XLB - Materials Select Sector SPDR Fund</li>
+          <li>XLY - Consumer Discretionary Select Sector SPDR Fund</li>
+          <li>XLV - Health Care Select S</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>mlb</h2>
+        <ul>
+          <li>ARI - Arizona Diamondbacks</li>
+          <li>ATL - Atlanta Braves</li>
+          <li>BAL - Baltimore Orioles</li>
+          <li>BOS - Boston Red Sox</li>
+          <li>CHC - Chicago Cubs</li>
+          <li>CHW - Chicago White Sox</li>
+          <li>CIN - Cincinnati Reds</li>
+          <li>CLE - Cleveland Guardians</li>
+          <li>COL - Colorado Rockies</li>
+          <li>DET - Detroit Tigers</li>
+          <li>HOU - Houston Astros</li>
+          <li>KCR - Kansas City Royals</li>
+          <li>LAA - Los Angeles Angels</li>
+          <li>LAD - Los Angeles Dodgers</li>
+          <li>MIA - Miami Marlins</li>
+          <li>MIL - Milwaukee Brewers</li>
+          <li>MIN - Minnesota Twins</li>
+          <li>NYM - New York Mets</li>
+          <li>NYY - New York Yankees</li>
+          <li>OAK - Oakland Athletics</li>
+          <li>PHI - Philadelphia Phillies</li>
+          <li>PIT - Pittsburgh Pirates</li>
+          <li>SDP - San Diego Padres</li>
+          <li>SFG - San Francisco Giants</li>
+          <li>SEA - Seattle Mariners</li>
+          <li>STL - St. Louis Cardinals</li>
+          <li>TBR - Tampa Bay Rays</li>
+          <li>TEX - Texas Rangers</li>
+          <li>TOR - Toronto Blue Jays</li>
+          <li>WAS - Washington Nationals</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>NFL</h2>
+        <ul>
+          <li>ARZ - Arizona Cardinals</li>
+          <li>ATL - Atlanta Falcons</li>
+          <li>BAL - Baltimore Ravens</li>
+          <li>BUF - Buffalo Bills</li>
+          <li>CAR - Carolina Panthers</li>
+          <li>CHI - Chicago Bears</li>
+          <li>CIN - Cincinnati Bengals</li>
+          <li>CLE - Cleveland Browns</li>
+          <li>DAL - Dallas Cowboys</li>
+          <li>DEN - Denver Broncos</li>
+          <li>DET - Detroit Lions</li>
+          <li>GB - Green Bay Packers</li>
+          <li>HOU - Houston Texans</li>
+          <li>IND - Indianapolis Colts</li>
+          <li>JAC - Jacksonville Jaguars</li>
+          <li>KC - Kansas City Chiefs</li>
+          <li>LAC - Los Angeles Chargers</li>
+          <li>LAR - Los Angeles Rams</li>
+          <li>LV - Las Vegas Raiders</li>
+          <li>MIA - Miami Dolphins</li>
+          <li>MIN - Minnesota Vikings</li>
+          <li>NE - New England Patriots</li>
+          <li>NO - New Orleans Saints</li>
+          <li>NYG - New York Giants</li>
+          <li>NYJ - New York Jets</li>
+          <li>PHI - Philadelphia Eagles</li>
+          <li>PIT - Pittsburgh Steelers</li>
+          <li>SD - San Diego Chargers</li>
+          <!-- Note: San Diego Chargers moved to LA and are now known as Los Angeles Chargers -->
+          <li>SEA - Seattle Seahawks</li>
+          <li>SFO - San Francisco 49ers</li>
+          <li>TAM - Tampa Bay Buccaneers</li>
+          <li>TEN - Tennessee Titans</li>
+          <li>WAS - Washington Commanders</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>NBA</h2>
+        <ul>
+          <li>ATL - Atlanta Hawks</li>
+          <li>BOS - Boston Celtics</li>
+          <li>BRK - Brooklyn Nets</li>
+          <li>CHA - Charlotte Hornets</li>
+          <li>CHI - Chicago Bulls</li>
+          <li>CLE - Cleveland Cavaliers</li>
+          <li>DAL - Dallas Mavericks</li>
+          <li>DEN - Denver Nuggets</li>
+          <li>DET - Detroit Pistons</li>
+          <li>GSW - Golden State Warriors</li>
+          <li>HOU - Houston Rockets</li>
+          <li>IND - Indiana Pacers</li>
+          <li>LAC - Los Angeles Clippers</li>
+          <li>LAL - Los Angeles Lakers</li>
+          <li>MEM - Memphis Grizzlies</li>
+          <li>MIA - Miami Heat</li>
+          <li>MIL - Milwaukee Bucks</li>
+          <li>MIN - Minnesota Timberwolves</li>
+          <li>NOP - New Orleans Pelicans</li>
+          <li>NYK - New York Knicks</li>
+          <li>OKC - Oklahoma City Thunder</li>
+          <li>ORL - Orlando Magic</li>
+          <li>PHI - Philadelphia 76ers</li>
+          <li>PHX - Phoenix Suns</li>
+          <li>POR - Portland Trail Blazers</li>
+          <li>SAC - Sacramento Kings</li>
+          <li>SAS - San Antonio Spurs</li>
+          <li>TOR - Toronto Raptors</li>
+          <li>UTA - Utah Jazz</li>
+          <li>WAS - Washington Wizards</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>ncaaf</h2>
+        <ul>
+          <li>AL - Alabama Crimson Tide</li>
+          <li>AR - Arkansas Razorbacks</li>
+          <li>ASU - Arizona State Sun Devils</li>
+          <li>AUB - Auburn Tigers</li>
+          <li>BC - Boston College Eagles</li>
+          <li>BYU - Brigham Young Cougars</li>
+          <li>CAL - California Golden Bears</li>
+          <li>CAR - Carolina Panthers</li>
+          <li>CLEM - Clemson Tigers</li>
+          <li>COL - Colorado Buffaloes</li>
+          <li>Duke - Duke Blue Devils</li>
+          <li>FLA - Florida Gators</li>
+          <li>FSU - Florida State Seminoles</li>
+          <li>GA - Georgia Bulldogs</li>
+          <li>GEO - Georgia Tech Yellow Jackets</li>
+          <li>HOU - Houston Cougars</li>
+          <li>IA - Iowa Hawkeyes</li>
+          <li>ILL - Illinois Fighting Illini</li>
+          <li>IND - Indiana Hoosiers</li>
+          <li>LSU - LSU Tigers</li>
+          <li>MD - Maryland Terrapins</li>
+          <li>MICH - Michigan Wolverines</li>
+          <li>MSU - Michigan State Spartans</li>
+          <li>MISS - Mississippi Rebels</li>
+          <li>MO - Missouri Tigers</li>
+          <li>NAV - Navy Midshipmen</li>
+          <li>NEB - Nebraska Cornhuskers</li>
+          <li>ND - Notre Dame Fighting Irish</li>
+          <li>OK - Oklahoma Sooners</li>
+          <li>OKST - Oklahoma State Cowboys</li>
+          <li>ORE - Oregon Ducks</li>
+          <li>PENN - Penn State Nittany Lions</li>
+          <li>PITT - Pittsburgh Panthers</li>
+          <li>PSU - Penn State Nittany Lions</li>
+          <li>RUT - Rutgers Scarlet Knights</li>
+          <li>SC - South Carolina Gamecocks</li>
+          <li>SDSU - San Diego State Aztecs</li>
+          <li>SMU - Southern Methodist Mustangs</li>
+          <li>STAN - Stanford Cardinal</li>
+          <li>TAM - Texas A&M Aggies</li>
+          <li>TEX - Texas Longhorns</li>
+          <li>UCLA - UCLA Bruins</li>
+          <li>USC - USC Trojans</li>
+          <li>UTAH - Utah Utes</li>
+          <li>VANDY - Vanderbilt Commodores</li>
+          <li>WASH - Washington Huskies</li>
+          <li>WVU - West Virginia Mountaineers</li>
+          <li>WYO - Wyoming Cowboys</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>ncaaB</h2>
+        <ul>
+          <li>AR - Arkansas Razorbacks</li>
+          <li>ASU - Arizona State Sun Devils</li>
+          <li>AUB - Auburn Tigers</li>
+          <li>BAY - Baylor Bears</li>
+          <li>BC - Boston College Eagles</li>
+          <li>BYU - Brigham Young Cougars</li>
+          <li>CAL - California Golden Bears</li>
+          <li>CIN - Cincinnati Bearcats</li>
+          <li>CLEM - Clemson Tigers</li>
+          <li>COL - Colorado Buffaloes</li>
+          <li>Duke - Duke Blue Devils</li>
+          <li>FLA - Florida Gators</li>
+          <li>FSU - Florida State Seminoles</li>
+          <li>GA - Georgia Bulldogs</li>
+          <li>GEO - Georgia Tech Yellow Jackets</li>
+          <li>GON - Gonzaga Bulldogs</li>
+          <li>HOU - Houston Cougars</li>
+          <li>IA - Iowa Hawkeyes</li>
+          <li>ILL - Illinois Fighting Illini</li>
+          <li>IND - Indiana Hoosiers</li>
+          <li>IOWA - Iowa State Cyclones</li>
+          <li>LSU - LSU Tigers</li>
+          <li>MD - Maryland Terrapins</li>
+          <li>MICH - Michigan Wolverines</li>
+          <li>MSU - Michigan State Spartans</li>
+          <li>MISS - Mississippi State Bulldogs</li>
+          <li>MO - Missouri Tigers</li>
+          <li>NAV - Navy Midshipmen</li>
+          <li>NEB - Nebraska Cornhuskers</li>
+          <li>ND - Notre Dame Fighting Irish</li>
+          <li>OK - Oklahoma Sooners</li>
+          <li>OKST - Oklahoma State Cowboys</li>
+          <li>ORE - Oregon Ducks</li>
+          <li>PENN - Penn Quakers</li>
+          <li>PITT - Pittsburgh Panthers</li>
+          <li>PSU - Penn State Nittany Lions</li>
+          <li>RUT - Rutgers Scarlet Knights</li>
+          <li>SC - South Carolina Gamecocks</li>
+          <li>SDSU - San Diego State Aztecs</li>
+          <li>SMU - Southern Methodist Mustangs</li>
+          <li>STAN - Stanford Cardinal</li>
+          <li>TAM - Texas A&M Aggies</li>
+          <li>TEX - Texas Longhorns</li>
+          <li>UCLA - UCLA Bruins</li>
+          <li>USC - USC Trojans</li>
+          <li>UTAH - Utah Utes</li>
+          <li>VANDY - Vanderbilt Commodores</li>
+          <li>VILL - Villanova Wildcats</li>
+          <li>WASH - Washington Huskies</li>
+          <li>WVU - West Virginia Mountaineers</li>
+          <li>WYO - Wyoming Cowboys</li>
+        </ul>
+      </div>
+    </div>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
